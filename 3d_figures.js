@@ -282,8 +282,6 @@ function createPyramid(gl, translation, rotationAxis){
       0, -1/side, -side,
       -1, -1, -1,
       -1/side, -side, 0,
-
-
     ];
 
     gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(verts), gl.STATIC_DRAW);
@@ -376,23 +374,22 @@ function createPyramid(gl, translation, rotationAxis){
 
       var verts = [
 
-        // Face 1
         -1.0,  0.0,  1.0,
         1.0,  0.0,  1.0,
         0.0,  1.0,  0.0,
-        // Face 2
+
         1.0,  0.0,  1.0,
         1.0,  0.0, -1.0,
         0.0,  1.0,  0.0,
-        // Face 3
+
         1.0,  0.0, -1.0,
         -1.0,  0.0, -1.0,
         0.0,  1.0,  0.0,
-        // Face 4
+
         -1.0,  0.0, -1.0,
         -1.0,  0.0,  1.0,
         0.0,  1.0,  0.0,
-        // Face 5
+
         -1.0,  0.0,  1.0,
         1.0,  0.0,  1.0,
         0.0, -1.0,  0.0,
@@ -400,11 +397,11 @@ function createPyramid(gl, translation, rotationAxis){
         1.0,  0.0,  1.0,
         1.0,  0.0, -1.0,
         0.0,  -1.0,  0.0,
-        // Face 7
+
         1.0,  0.0, -1.0,
         -1.0,  0.0, -1.0,
         0.0,  -1.0,  0.0,
-        // Face 8
+
         -1.0,  0.0, -1.0,
         -1.0,  0.0,  1.0,
         0.0,  -1.0,  0.0,
@@ -442,14 +439,14 @@ function createPyramid(gl, translation, rotationAxis){
       gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, octahedronIndexBuffer);
       var octahedronIndices = [
 
-        0, 1, 2,    // Face 1
-        3, 4, 5,    // Face 2
-        6, 7, 8,    // Face 3
-        9, 10, 11,  // Face 4
-        12, 13, 14, // Face 5
-        15, 16, 17, // Face 6
-        18, 19, 20, // Face 7
-        21, 22, 23, // Face 8
+        0, 1, 2,
+        3, 4, 5,
+        6, 7, 8,
+        9, 10, 11,
+        12, 13, 14,
+        15, 16, 17,
+        18, 19, 20,
+        21, 22, 23,
 
       ];
 
